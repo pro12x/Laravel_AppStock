@@ -27,4 +27,39 @@ Thank you, please send me your suggestions and proposals so that together we can
         <td>create_users_table</td>
         <td>ManyToMany(User, Role), OneToMany(User, Product)</td>
     </tr>
+    <tr>
+        <td>2</td>
+        <td>Role</td>
+        <td>RoleController</td>
+        <td>create_roles_table</td>
+        <td>ManyToMany(Role, User)</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Product</td>
+        <td>ProductController</td>
+        <td>create_products_table</td>
+        <td>ManyToOne(Product, User), OneToMany(Product, Entry), OneToMany(Product, Output), ManyToOne(Product, Category)</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Category</td>
+        <td>CategoryController</td>
+        <td>create_categories_table</td>
+        <td>OneToMany(Category, Product)</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Entry</td>
+        <td>EntryController</td>
+        <td>create_entries_table</td>
+        <td>ManyToOne(Entry, Product)</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Output</td>
+        <td>OutputController</td>
+        <td>create_outputs_table</td>
+        <td>ManyToOne(Output, Product)</td>
+    </tr>
 </table>
