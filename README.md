@@ -8,7 +8,7 @@ Thank you, please send me your suggestions and proposals so that together we can
 ## Installing the project
 * composer update
 * cp .env.example .env
-* php artisan vendor:publish -tag=laravel-assets --ansi --force
+* php artisan vendor:publish --tag=laravel-assets --ansi --force
 * php artisan key:generate --ansi
 
 ## Relation, Models, Controllers, Migrations
